@@ -1,4 +1,6 @@
 import React from 'react';
+import ArrowLeft from '@material-ui/icons/ArrowLeft';
+import ArrowRight from '@material-ui/icons/ArrowRight';
 
 export const Staging = (props) => {
   const { previousCard, currentCard, nextCard } = props;
@@ -27,7 +29,7 @@ export const Actions = (props) => {
   return (
     <div id='actions' className='flex flex-row p-4 relative'>
       <div className='flex-1 flex flex-row justify-end relative'>
-        <button onClick={handlePrevious}>Previous</button>
+        <button onClick={handlePrevious} className='bg-cxgreen-dark rounded-full'><ArrowLeft fontSize='large' className='text-white' /></button>
       </div>
       <div className='flex flex-grow flex-row items-center justify-center'>
         <div className={`w-4 h-4 mx-2 rounded-full border border-cxdark ${active === 0 ? 'bg-cxgreen-dark' : 'bg-gray-300'} `}></div>
@@ -37,7 +39,7 @@ export const Actions = (props) => {
         <div className={`w-4 h-4 mx-2 rounded-full border border-cxdark ${active === 4 ? 'bg-cxgreen-dark' : 'bg-gray-300'} `}></div>
       </div>
       <div className='flex-1 flex flex-row justify-start relative'>
-        <button onClick={handleNext}>Next</button>
+        <button onClick={handleNext} className='bg-cxgreen-dark rounded-full'><ArrowRight fontSize='large' className='text-white' /></button>
       </div>
     </div>
   )

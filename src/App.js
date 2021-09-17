@@ -1,4 +1,11 @@
 import React from 'react';
+import EmailIcon from '@material-ui/icons/Email';
+import CallIcon from '@material-ui/icons/Call';
+import LocalCafeIcon from '@material-ui/icons/LocalCafe';
+import SchoolIcon from '@material-ui/icons/School';
+import LocalLibraryIcon from '@material-ui/icons/LocalLibrary';
+import CollectionsIcon from '@material-ui/icons/Collections';
+import ExploreIcon from '@material-ui/icons/Explore';
 //Components
 import { College, JuniorHighSchool, SeniorHighSchool } from './components/Education';
 import { Skills } from './components/Skills';
@@ -64,14 +71,14 @@ function App() {
       <section className='bg-cxgreen-dark h-screen w-full grid grid-cols-2 grid-rows-6 p-4' id='section-introduction'>
         <div className='row-start-3 self-end'>
           <h1 className='text-right text-5xl text-white font-semibold mb-5'>Hi, I'm Jerico</h1>
-          <h3 className='text-right text-4xl text-white'>And I'm here to share my adventure!</h3>
+          <h3 className='text-right text-4xl text-white'>And I'm here to share my adventure! </h3>
         </div>
-        <p className='row-start-4 text-right text-white text-2xl mt-5'>Let's <span>talk!</span></p>
-        <div className='col-start-2 row-start-3 row-span-2 bg-white mx-9 my-9 rounded-xl border border-red-900 box-border'>teheeee</div>
+        <p className='row-start-4 text-right text-white text-2xl mt-5'><ExploreIcon fontSize='inherit' className='text-white' /> Let's <span>talk!</span></p>
+        {/* <div className='col-start-2 row-start-3 row-span-2 bg-white mx-9 my-9 rounded-xl border border-red-900 box-border'>teheeee</div> */}
       </section>
       {/* Educational Section */}
       <section className='bg-gradient-to-b from-cxgreen-dark via-cxgreen-dark to-cxgreen h-screen flex flex-col p-4'>
-        <h2 id='section-title' className='text-center text-4xl text-white font-semibold'>My Educational Life</h2>
+        <h2 id='section-title' className='text-center text-4xl text-white font-semibold'><SchoolIcon fontSize='inherit' className='text-white' /> My education</h2>
         <p className='text-center text-3xl text-white mt-8'>
           I'm currently a 3rd year student taking up Bachelor of Science <br/>
           in Computer Engineering at the Polytechnic University of the Philippines
@@ -90,7 +97,7 @@ function App() {
       </section>
       {/* Skills Section */}
       <section className='bg-cxgreen h-screen flex flex-col p-4'>
-        <h2 id='section-title' className='text-center text-4xl text-white font-semibold'>Here's what I can do...</h2>
+        <h2 id='section-title' className='text-center text-4xl text-white font-semibold'><LocalLibraryIcon fontSize='inherit' className='text-white' /> Here's what I know...</h2>
         <p className='text-center text-3xl text-white mt-8'>And I can learn more!</p>
         <div className='flex flex-row flex-wrap gap-4 justify-center mt-6 pb-6'>
           {skillsDisplay}
@@ -98,7 +105,7 @@ function App() {
       </section>
       {/* Certs Section */}
       <section className='bg-gradient-to-b from-cxgreen via-cxgreen to-cxgreen-light h-screen flex flex-col p-4'>
-        <h2 id='section-title' className='text-center text-4xl text-white font-semibold'>What I've gained so far...</h2>
+        <h2 id='section-title' className='text-center text-4xl text-white font-semibold'><CollectionsIcon fontSize='inherit' className='text-white' /> What I've gained so far...</h2>
         <p className='text-center text-3xl text-white mt-8'>And I can gain more!</p>
         <div className='mt-4 flex flex-col h-full'>
           <Staging 
@@ -117,11 +124,11 @@ function App() {
       <section className='bg-cxgreen-light h-half flex flex-row p-4'>
         <div className='flex-1 flex flex-col justify-center items-center'>
           <h2 className='text-center text-5xl text-cxdark font-semibold'>Interested?</h2>
-          <h3 className='text-center text-4xl text-cxdark mt-4'>Let's grab coffee!</h3>
+          <h3 className='text-center text-4xl text-cxdark mt-4'>Let's grab coffee! <LocalCafeIcon fontSize='inherit' /></h3>
         </div>
         <div className='flex-1 flex flex-col justify-center'>
-          <h4 className='text-3xl text-cxdark font-medium'>jericoclemente9@gmail.com</h4>
-          <h4 className='text-3xl text-cxdark font-medium mt-4'>+63 927 236 5437</h4>
+          <h4 className='text-3xl text-cxdark font-medium'> <EmailIcon fontSize='inherit' /> jericoclemente9@gmail.com</h4>
+          <h4 className='text-3xl text-cxdark font-medium mt-4'> <CallIcon fontSize='inherit' /> +63 927 236 5437</h4>
         </div>
       </section>
     </div>
