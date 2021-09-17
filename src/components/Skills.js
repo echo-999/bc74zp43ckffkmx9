@@ -14,14 +14,14 @@ export const Skills = (props) => {
 }
 const Card = (props) => {
   return (
-    <div className='border-2 border-cxgreen-dark bg-cxgreen-light flex flex-col items-center p-6 w-1/5 rounded-xl shadow-lg gap-y-3'>
+    <div className='border-2 border-cxgreen-dark bg-cxgreen-light flex flex-col items-center p-6 w-1/5 rounded-xl shadow-lg'>
       {props.children}
     </div>
   )
 }
 const Title = (props) => {
   return (
-    <h3 className='text-cxdark text-center text-xl font-medium'>{props.children}</h3>
+    <h3 className='text-cxdark text-center text-xl font-medium mb-2'>{props.children}</h3>
   )
 }
 const Description = (props) => {
@@ -32,7 +32,7 @@ const Description = (props) => {
 const ProficiencyBar = ({level}) => {
   // console.log(level)
   return (
-    <div className='grid grid-cols-3 gap-x-2 w-full my-6'>
+    <div className='grid grid-cols-3 gap-x-2 w-full my-7'>
       <div className={`${level >= 1 ? 'bg-cxgreen-dark' : 'bg-gray-300'} h-6 rounded-3xl`}></div>
       <div className={`${level >= 2 ? 'bg-cxgreen-dark' : 'bg-gray-300'} h-6 rounded-3xl`}></div>
       <div className={`${level >= 3 ? 'bg-cxgreen-dark' : 'bg-gray-300'} h-6 rounded-3xl`}></div>

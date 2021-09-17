@@ -5,13 +5,13 @@ import ArrowRight from '@material-ui/icons/ArrowRight';
 export const Staging = (props) => {
   const { previousCard, currentCard, nextCard } = props;
   return (
-    <div id='staging' className='flex flex-row justify-around relative mb-10'>
+    <div id='staging' className='flex flex-row justify-around relative mb-32'>
       <div id='prev' className='border border-cxdark p-2 w-1/3 shadow-xl flex flex-col justify-center filter blur-xs'>
         {previousCard && (
           <img src={previousCard.src} alt="" />
         )}
       </div>
-      <div id='curr' className='border border-cxdark p-2 w-1/3 shadow-2xl z-10 top-8 absolute'>
+      <div id='curr' className='border border-cxdark p-2 w-5/12 shadow-2xl z-10 top-8 absolute'>
         {currentCard && (
           <img src={currentCard.src} alt="" />
         )}

@@ -99,7 +99,7 @@ function App() {
       <section className='bg-cxgreen h-screen flex flex-col p-4'>
         <h2 id='section-title' className='text-center text-4xl text-white font-semibold'><LocalLibraryIcon fontSize='inherit' className='text-white' /> Here's what I know...</h2>
         <p className='text-center text-3xl text-white mt-8'>And I can learn more!</p>
-        <div className='flex flex-row flex-wrap gap-4 justify-center mt-6 pb-6'>
+        <div className='flex flex-row flex-wrap gap-3 justify-center mt-6'>
           {skillsDisplay}
         </div>
       </section>
