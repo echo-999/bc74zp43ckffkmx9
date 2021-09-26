@@ -46,6 +46,7 @@ function App() {
     {id: 3, title: 'Material - UI', description: 'A Popular React UI Framework', proficiency: 'Working', url: 'https://material-ui.com/'},
     {id: 4, title: 'Tailwind CSS', description: 'A Utility-First CSS Framework', proficiency: 'Basic', url: 'https://tailwindcss.com/'},
     {id: 5, title: 'React JS', description: 'A Front-End JavaScript Library', proficiency: 'Working', url: 'https://reactjs.org/'},
+    {id: 6, title: 'React-Redux', description: 'A Predictable State Container for JS Apps', proficiency: 'Basic', url: 'https://react-redux.js.org/'},
   ];
   const certificates = [
     {id: 0, title: 'Responsive Web Design', from: 'FreeCodeCamp', src: ResponsiveWebDesign },
